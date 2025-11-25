@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jeff — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-inner">
+      <div class="logo" style="cursor:pointer">J.</div>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </div>
+  </header>
+  <!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebarMenu">
+  <button class="sidebar-close" id="sidebarClose">✕</button>
+  <h3 class="sidebar-title">Connect</h3>
+
+  <div class="sidebar-links">
+
+  <a href="https://instagram.com/" target="_blank" class="icon-link">
+    <img src="icons/instagram.png" alt="Instagram" />
+  </a>
+
+  <a href="https://linkedin.com/" target="_blank" class="icon-link">
+    <img src="icons/linkedin.png" alt="LinkedIn" />
+  </a>
+
+  <a href="https://github.com/" target="_blank" class="icon-link">
+    <img src="icons/github.png" alt="GitHub" />
+  </a>
+
+</div>
+
+
+</aside>
+
+
+  <main>
+    <!-- HERO / INTRO -->
+    <section id="home" class="hero section cinematic">
+      <div class="hero-inner reveal">
+        <div class="hero-left">
+          <p class="greeting">Hey, I'm Jeff <span class="wave">👋</span></p>
+          <h1 class="hero-title">Front end<br/>Developer</h1>
+          <p class="hero-sub">I build beautiful, usable websites that users enjoy. I focus on responsive, accessible interfaces and continuous learning.</p>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary">Get In Touch</button>
+            <a class="btn btn-ghost" href="#projects">Browse Projects</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="profile-photo" id="profilePhoto">
+            <img src="pfp.jpg" alt="Jeff profile photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section">
+      <div class="container reveal">
+        <h2 class="section-title">About<span class="dot">.</span></h2>
+        <p class="about-text">
+          I'm Jeff — a 19-year-old BSc Computer Science student with a passion for blending creativity and technology.
+          I design responsive, user-friendly interfaces in Figma and bring them to life using HTML, CSS and JavaScript.
+          I also explore machine learning through small projects and continually refine my craft.
+        </p>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="education section">
+     <div class="container reveal">
+       <h2 class="section-title">Education<span class="dot">.</span></h2>
+
+       <div class="education-grid">
+
+         <div class="edu-card">
+            <h3>BSc Computer Science with Data Analytics</h3>
+            <p>Rajagiri College of Social Sciences (Autonomous)</p>
+            <span class="year">2023 – Present</span>
+          </div>
+
+          <div class="edu-card">
+            <h3>Higher Secondary Education</h3>
+            <p>Computer Science Stream<br>Keralam</p>
+            <span class="year">2021 – 2023</span>
+          </div>
+
+          <div class="edu-card">
+            <h3>High School</h3>
+            <p>Kerala State Syllabus</p>
+            <span class="year">2010 – 2021</span>
+          </div>
+
+        </div>
+     </div>
+    </section>
+
+
+    <!-- SKILLS (AUTO-GENERATED INFINITE CAROUSEL) -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <h2 class="section-title">Skills<span class="dot">.</span></h2>
+
+        <div class="skills-marquee" aria-hidden="false">
+          <div class="skills-track" id="skillsTrack"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <h2 class="section-title">Projects<span class="dot">.</span></h2>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="java_proj.png" alt="Electronics Shop Manager screenshot" class="project-image">
+            </div>
+            <h3>Electronics Shop Management ↗</h3>
+            <p>Created an E-commerce platform using Java Swing.</p>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="py_proj_screen.png" alt="Typing Simulator screenshot" class="project-image">
+            </div>
+            <h3>Typing Simulator ↗</h3>
+            <p>Typing test built with Python Tkinter and tools.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Jeff — front end developer</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
